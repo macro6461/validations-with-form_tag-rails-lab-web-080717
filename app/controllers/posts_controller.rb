@@ -19,7 +19,7 @@ class PostsController < ApplicationController
       @post = Post.create(post_params)
       redirect_to post_path(@post)
     else
-      render :new
+      render :edit
     end
   end
 
